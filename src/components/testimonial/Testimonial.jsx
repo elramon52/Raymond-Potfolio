@@ -64,8 +64,8 @@ export const Testimonial = () => {
   ];
   return (
     <section id="testimonial">
-      <h5>Client Feedback</h5>
-      <h2>Feedback</h2>
+
+      <h2>Recent feedback from clients.</h2>
 
       <Swiper className="container testimonials__container"
       modules={[Pagination, Navigation, Scrollbar, A11y]}

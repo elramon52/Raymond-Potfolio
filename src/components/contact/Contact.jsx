@@ -44,12 +44,12 @@ target='_blank' rel='noreferrer'>Get me on LinkedIn</a>
 target='_blank'rel='noreferrer'>Direct message</a>
 </article>
 </div>
-<form ref={form} onSubmit={sendEmail}>
-<input type="text" name='name' placeholder='full name' required/>
-<input type="email" name='email' placeholder='email' required/>
-<textarea name="message" id="message" cols="30" rows="10"
-placeholder='message' required></textarea>
-<button type="submit" className='btn btn-primary'>send</button>
+    <form ref={form} onSubmit={sendEmail}>
+        <input type="text" name='name' placeholder='full name' required/>
+        <input type="email" name='email' placeholder='email' required/>
+        <textarea name="message" id="message" cols="30" rows="10"
+        placeholder='message' required></textarea>
+        <button type="submit" className='btn btn-primary'>send</button>
 </form>
 </div>
 </section>

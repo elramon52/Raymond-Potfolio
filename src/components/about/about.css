@@ -17,14 +17,15 @@
 }
 
 .about__me__image{
-    border-radius: 2rem;
+    border-radius: 50%;
     overflow: hidden;
-    transform: rotate(10deg);
+    transform: rotate(30deg);
     transition: var(--transition);
 }
 
 .about__me__image:hover{
     transform:rotate(0);
+    
 }
 
 .about__cards{
@@ -111,4 +112,8 @@
     margin: 1.5rem 0;
     }
 
+}
+p{
+    font-family: Times New Roman;
+    font-weight: lighter;
 }

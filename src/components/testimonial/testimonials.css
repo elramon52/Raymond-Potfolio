@@ -1,6 +1,11 @@
 .container.testimonials__container {
     width: 40%;
     padding-bottom: 3rem;
+    background-color: rgb(2, 12, 7);
+    width: 88%;
+    border-radius: 4%;
+    font-family: Times New Roman;
+    font-weight: lighter;
 }
 
 .client__avatar{
@@ -10,10 +15,11 @@
     border-radius: 50%;
     margin: 0 auto 1rem;
     border: .4rem solid var(--color-primary-variant);
+    background-color: blue;
 }
 
 .testimonial{
-    background: var(--color-bg-variant);
+    background-color:#1c0606;
     text-align: center;
     padding: 2rem;
     border-radius: 2rem;

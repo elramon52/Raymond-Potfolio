@@ -6,8 +6,8 @@ import ListServices from './listServices'
 export const Services = () => {
   return (
     <section id="services">
-      <h5>What i offer</h5>
-      <h2>Services
+     
+      <h2>Services I offer
       <ol>
 <li><a href="network-installation-and-configuration.html">Network installation and configuration</a></li>
 <li><a href="network-security.html">Network security</a></li>

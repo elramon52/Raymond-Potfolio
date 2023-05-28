@@ -49,8 +49,15 @@
 
 .service__list p{
     font-size: .9rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+a{
+    font-family: Times New Roman;
+    font-weight: lighter;
+    text-decoration: wavy;
+    
+}
 @media only screen and (max-width:1024px){
     .services__container{
         grid-template-columns: 1fr 1fr;

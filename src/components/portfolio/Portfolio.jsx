@@ -8,6 +8,7 @@ import img6 from "../../assets/img6.png";
 import img7 from "../../assets/img7.png";
 import img8 from "../../assets/img8.png";
 import img9 from "../../assets/img9.png";
+import img10 from "../../assets/img10.png";
 import ListPortfolio from "./listPortfolio";
 
 export const Portfolio = () => {
@@ -25,6 +26,13 @@ export const Portfolio = () => {
       demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
       id: 2,
       title:'Project 2'
+    },
+    {
+      image : img10,
+      github: 'https://github.com',
+      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
+      id: 2,
+      title:'Project 3'
     },
     {
       image : img3,
@@ -78,8 +86,7 @@ export const Portfolio = () => {
   ]
   return (
     <section id="portfolio">
-      <h5>My recent work</h5>
-      <h2>Portfolio</h2>
+          <h2>My Recent projects</h2>
 <ListPortfolio/>  
       <div className="container portfolio__container">
       {

@@ -1,9 +1,11 @@
 .footer__container{
     background-color: var(--color-primary);
+    background-color: rgb(11, 94, 182);
     margin-top: 2rem;
     text-align: center;
     padding: 2rem 0;
     font-size: .9rem;
+    border-radius: 10%;
 }
 
 .footer__logo{

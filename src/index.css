@@ -12,7 +12,7 @@
 }
 
 :root{
-  --color-bg:#8b2464;
+  --color-bg:#30021f;
   --color-bg-variant:#221446;
   --color-primary:#14abc5;
   --color-primary-variant:rgba(77, 181, 255, 0.4);
@@ -40,6 +40,7 @@ body {
   background: var(--color-bg);
   color: var(--color-white);
   line-height: 1.7;
+  
 }
 
 .container{

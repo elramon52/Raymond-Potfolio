@@ -8,7 +8,6 @@ import img6 from "../../assets/img6.png";
 import img7 from "../../assets/img7.png";
 import img8 from "../../assets/img8.png";
 import img9 from "../../assets/img9.png";
-import img10 from "../../assets/img10.png";
 import ListPortfolio from "./listPortfolio";
 
 export const Portfolio = () => {
@@ -28,10 +27,10 @@ export const Portfolio = () => {
       title:'Project 2'
     },
     {
-      image : img10,
+      image : img7,
       github: 'https://github.com',
       demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 2,
+      id: 4,
       title:'Project 3'
     },
     {
@@ -41,13 +40,7 @@ export const Portfolio = () => {
       id: 4,
       title:'Project 4'
     },
-    {
-      image : img5,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 5,
-      title:'Project 5'
-    },
+  
     {
       image : img6,
       github: 'https://github.com',
@@ -56,37 +49,18 @@ export const Portfolio = () => {
       title:'Project 6'
     },
       {
-      image : img7,
+      image : img8,
       github: 'https://github.com',
       demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
       id: 7,
       title:'Project 7'
     },
-    {
-      image : img8,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 8,
-      title:'Project 8'
-    },
-    {
-      image : img9,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 9,
-      title:'Project 9'
-    },
-    {
-      image : img1,
-      github: 'https://github.com',
-      demo: 'https://dribbble.com/shots/20177733-Apres-Brand-Identity-Design',
-      id: 10,
-      title:'Project 10'
-    },
+   
   ]
   return (
     <section id="portfolio">
-          <h2>My Recent projects</h2>
+      <h5>My recent work</h5>
+      <h2>Portfolio</h2>
 <ListPortfolio/>  
       <div className="container portfolio__container">
       {

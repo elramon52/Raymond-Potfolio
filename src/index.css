@@ -1,6 +1,8 @@
+/* Importing Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-*{
+/* Global CSS Reset */
+* {
   margin: 0;
   padding: 0;
   border: 0;
@@ -8,129 +10,176 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-
 }
 
-:root{
-  --color-bg:#30021f;
-  --color-bg-variant:#221446;
-  --color-primary:#14abc5;
-  --color-primary-variant:rgba(77, 181, 255, 0.4);
-  --color-white:#fff;
-  --color-light:rgba(255,255,255, 0.6);
-
-  --container-width-lg:75%;
-  --container-width-md:86%;
-  --container-width-sm:90%;
-
-  --transition: all 400ms ease;
-
+/* Global CSS Variables */
+:root {
+  --color-bg: #0e1122; /* Background color */
+  --color-bg-variant: #221446; /* Background variant color */
+  --color-primary: #0088cc; /* Primary color */
+  --color-primary-variant: rgba(0, 136, 204, 0.4); /* Primary variant color */
+  --color-white: #fff; /* White color */
+  --color-light: #657786; /* Light color */
+  --transition: all 400ms ease; /* Transition duration and easing */
+  --container-width-lg: 75%; /* Large container width */
+  --container-width-md: 86%; /* Medium container width */
+  --container-width-sm: 90%; /* Small container width */
 }
 
-html{
-  scroll-behavior: smooth;
+/* HTML Styles */
+html {
+  scroll-behavior: smooth; /* Smooth scrolling behavior */
 }
 
-::-webkit-scrollbar{
-  display:none
+/* Hide Scrollbar */
+::-webkit-scrollbar {
+  display: none;
 }
 
+/* Body Styles */
 body {
-  font-family: 'Poppins', sans-serif;
-  background: var(--color-bg);
-  color: var(--color-white);
-  line-height: 1.7;
-  
+  font-family: 'Poppins', sans-serif; /* Font family */
+  background: var(--color-bg); /* Background color */
+  color: var(--color-light); /* Text color */
+  line-height: 1.7; /* Line height */
 }
 
-.container{
-  width: var(--container-width-lg);
-  margin:0 auto;
+/* Container Styles */
+.container {
+  width: var(--container-width-lg); /* Container width */
+  margin: 0 auto; /* Center align container */
 }
 
-h1, h2, h3, h4, h5{
-  font-weight: 500;
+/* Heading Styles */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600; /* Font weight */
 }
 
-h1{
-  font-size: 2.5rem;
+h1 {
+  font-size: 2.5rem; /* Heading 1 font size */
 }
 
-section{
-  margin-top: 8rem;
- }
-
-section > h2, 
-section > h5{
-  text-align: center;
-  color: var(--color-light);
-  overflow: hidden;
+/* Section Styles */
+section {
+  margin-top: 8rem; /* Margin at the top of each section */
 }
 
-section > h2{
-  color: var(--color-light);
-  margin-bottom: 3rem;
+section > h2,
+section > h5 {
+  text-align: center; /* Center align section headings */
+  color: var(--color-primary); /* Primary color for section headings */
 }
 
-.text-light{
-  color: var(--color-light);
+section > h2 {
+  margin-bottom: 3rem; /* Margin at the bottom of main section headings */
+  font-size: 2.8rem; /* Main section heading font size */
 }
 
-a{
-  color: var(--color-primary);
-  transition: var(--transition);
+/* Text Styles */
+.text-light {
+  color: var(--color-light); /* Light color for text */
 }
 
-a:hover{
-  color: var(--color-white);
+/* Link Styles */
+a {
+  color: var(--color-primary); /* Link color */
+  transition: var(--transition); /* Smooth transition on link hover */
 }
 
-.btn{
-  width: max-content;
-  display: inline-block;
-  color: var(--color-primary);
-  padding: .75rem 1.2rem;
-  border-radius: .4rem;
-  cursor: pointer;
-  border: 1px solid var(--color-primary);
-  transition: var(--transition);
+a:hover {
+  color: var(--color-primary-variant); /* Link color on hover */
 }
 
-.btn:hover{
-  background:var(--color-white);
-  color: var(--color-bg);
-  border-color: transparent;
-
+/* Button Styles */
+.btn {
+  width: max-content; /* Set button width to fit content */
+  display: inline-block; /* Display buttons inline */
+  color: var(--color-white); /* Button text color */
+  padding: 0.75rem 1.2rem; /* Button padding */
+  border-radius: 0.4rem; /* Button border radius */
+  cursor: pointer; /* Button cursor style */
+  background: var(--color-primary); /* Button background color */
+  transition: var(--transition); /* Smooth transition on button hover */
 }
 
-.btn-primary{
-    background: var(--color-primary);
-    color: var(--color-bg);  
+.btn:hover {
+  background: var(--color-primary-variant); /* Button background color on hover */
 }
 
-img{
-  display: block;
-  width: 100%;
-  object-fit: cover;
+.btn-primary {
+  background: var(--color-primary); /* Primary button background color */
 }
 
+/* Image Styles */
+img {
+  display: block; /* Display images as blocks */
+  width: 100%; /* Set image width to 100% */
+  object-fit: cover; /* Cover image inside its container */
+}
 
-@media screen and (max-width:1024px) {
-  .container{
-    width: var(--container-width-md);
+/* MEDIA QUERIES FOR MEDIUM DEVICES */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md); /* Medium container width */
+  }
+  section {
+    margin-top: 1rem; /* Reduced margin at the top of each section */
+  }
+}
+
+/* MEDIA QUERIES FOR SMALL DEVICES */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm); /* Small container width */
+  }
+  section > h2 {
+    margin-top: 1rem; /* Reduced margin at the top of main section headings */
+    font-size: 2.4rem; /* Reduced font size for main section headings */
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 15px; /* Reduced padding on large screens */
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 2rem; /* Reduced font size for heading 1 */
   }
 
-  section{
-    margin-top: 6rem;
+  section {
+    margin-top: 60px; /* Reduced margin at the top of each section */
+  }
+
+  section > h2 {
+    margin-bottom: 20px; /* Reduced margin at the bottom of main section headings */
+    font-size: 2.4rem; /* Reduced font size for main section headings */
   }
 }
 
-@media screen and (max-width:600px) {
-  .container{
-    width: var(--container-width-sm);
+@media screen and (max-width: 768px) {
+  section {
+    margin-top: 40px; /* Reduced margin at the top of each section */
   }
 
-  section > h2{
-    margin-bottom: 2rem;
+  section > h2 {
+    font-size: 2rem; /* Reduced font size for main section headings */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section {
+    margin-top: 30px; /* Reduced margin at the top of each section */
+  }
+
+  section > h2 {
+    font-size: 1.8rem; /* Reduced font size for main section headings */
   }
 }

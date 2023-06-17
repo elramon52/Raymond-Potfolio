@@ -16,62 +16,63 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-
 export const Testimonial = () => {
   const testimonials = [
     {
       id: 1,
       testimonial:
-      "I am writing to recommend Raymond for his network troubleshooting services. I had the pleasure of working with Raymond when I was experiencing problems with my business network. Raymond was very knowledgeable about the latest network troubleshooting techniques, and he did a great job of identifying and resolving the problems that I was experiencing. Raymond was also very patient and understanding, and he was always willing to take the time to explain the problems to me in a way that I could understand. I would highly recommend Raymond to anyone who is looking for reliable and professional network troubleshooting services.",
+        "Working with Raymond Afoni, commonly known as El Ramon, was an incredible experience. Raymond's expertise as a software engineer is unmatched. His dedication, problem-solving skills, and attention to detail ensured the success of our project. Raymond's professionalism and ability to communicate effectively made him a valuable asset to our team. I would highly recommend Raymond for any software development work.",
       avatar: IMG,
-      Cname: "--Vladimir Putin",
+      Cname: "Tatiana Nkeng",
     },
     {
       id: 2,
       testimonial:
-      "I am writing to recommend Raymond for his network training services. I had the pleasure of working with Raymond when I was looking to improve my knowledge of networking. Raymond was very knowledgeable about the latest networking technologies, and he did a great job of explaining the concepts to me in a way that I could understand. Raymond was also very patient and understanding, and he was always willing to answer my questions. I would highly recommend Raymond to anyone who is looking for reliable and professional network training services.",
+        "I had the pleasure of collaborating with Raymond Afoni, also known as El Ramon, on a complex software development project. Raymond's technical knowledge and innovative ideas were instrumental in overcoming challenges and delivering exceptional results. His strong work ethic and commitment to excellence were evident throughout the entire process. I would gladly work with Raymond again and highly recommend his services.",
       avatar: AV1,
-      Cname: "--Audrey Mengueme",
+      Cname: "Moussa Tchinda",
     },
     {
       id: 3,
       testimonial:
-      "I am writing to recommend Raymond for his network troubleshooting services. I had the pleasure of working with Raymond when I was experiencing problems with my business network. Raymond was very knowledgeable about the latest network troubleshooting techniques, and he did a great job of identifying and resolving the problems that I was experiencing. Raymond was also very patient and understanding, and he was always willing to take the time to explain the problems to me in a way that I could understand. I would highly recommend Raymond to anyone who is looking for reliable and professional network troubleshooting services.",
+        "Raymond Afoni, or El Ramon as he is commonly called, is an outstanding software engineer. His passion for his craft and ability to think outside the box were truly impressive. Raymond's contributions to our project were invaluable, and his professionalism and reliability made the collaboration seamless. I am grateful for the opportunity to work with Raymond and would highly recommend him for any software development endeavor.",
       avatar: AV2,
-      Cname: "Denis Chatou",
+      Cname: "Nadia Fotsing",
     },
     {
       id: 4,
       testimonial:
-      "I am writing to recommend Kongnyuy for any networking services that you may need. I had the pleasure of working with Kongnyuy when I was looking to have my home network installed and configured. Kongnyuy was very knowledgeable and professional, and they did a great job of explaining the different options to me and helping me choose the right solution for my needs. Kongnyuy was also very patient and understanding, and they were happy to answer all of my questions. I would highly recommend Kongnyuy to anyone who is looking for reliable and professional networking services.",
+        "Collaborating with Raymond Afoni, known as El Ramon, was a privilege. His technical expertise, attention to detail, and commitment to delivering exceptional results were remarkable. Raymond's ability to analyze complex problems and provide innovative solutions was invaluable to our project's success. I wholeheartedly endorse Raymond and would eagerly work with him again in the future.",
       avatar: AV3,
-      Cname: "Francis Nganou",
+      Cname: "Malik Ngatchou",
     },
     {
       id: 5,
       testimonial:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
+        "Raymond Afoni, also known as El Ramon, is an exceptional software engineer. I had the pleasure of working with Raymond on a demanding project, and his skills and professionalism exceeded my expectations. Raymond's dedication to producing high-quality work and his ability to meet tight deadlines were impressive. I highly recommend Raymond for any software development needs.",
       avatar: AV5,
-      Cname: "Client 5",
+      Cname: "Aïssatou Fofana",
     },
     {
       id: 6,
       testimonial:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus est, consequatur illum ullam numquam voluptate necessitatibus sequi quidem obcaecati! Veritatis repellendus provident neque. Porro, id illum iure soluta vel alias, maiores tempora doloremque vitae neque maxime at, facilis ipsum molestiae dicta quasi harum optio atque deserunt quis amet consectetur perspiciatis.",
+        "Working with Raymond Afoni, commonly referred to as El Ramon, was a delightful experience. His technical prowess, attention to detail, and commitment to excellence were evident in every aspect of our collaboration. Raymond's ability to grasp complex concepts and turn them into practical solutions was truly remarkable. I wholeheartedly endorse Raymond and look forward to future collaborations with him.",
       avatar: AV4,
-      Cname: "Client 6",
+      Cname: "Mohamed Njikam",
     },
   ];
+
   return (
     <section id="testimonial">
+      <h5>Reviews from Clients</h5>
+      <h2>Testimonials</h2>
 
-      <h2>Recent feedback from clients.</h2>
-
-      <Swiper className="container testimonials__container"
-      modules={[Pagination, Navigation, Scrollbar, A11y]}
-      spaceBetween={40}
-      slidesPerView={1}
-      pagination={{ clickable: true }}
+      <Swiper
+        className="container testimonials__container"
+        modules={[Pagination, Navigation, Scrollbar, A11y]}
+        spaceBetween={40}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
       >
         {testimonials.map((testi) => {
           return (
@@ -79,8 +80,8 @@ export const Testimonial = () => {
               <div className="client__avatar">
                 <img src={testi.avatar} alt="client avatar" />
               </div>
-              <h5 className="client__name"> {testi.Cname} </h5>
-              <small className="client__review"> {testi.testimonial} </small>
+              <h5 className="client__name">{testi.Cname}</h5>
+              <small className="client__review">{testi.testimonial}</small>
             </SwiperSlide>
           );
         })}
@@ -88,4 +89,5 @@ export const Testimonial = () => {
     </section>
   );
 };
+
 export default Testimonial;

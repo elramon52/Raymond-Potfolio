@@ -42,7 +42,7 @@ db.once('open', async () => {
 });
 
 // API routes
-app.use('/api/users', usersRouter);
+app.use('http://localhost:5000/users', usersRouter);
 
 // Start the server
 app.listen(PORT, () => {

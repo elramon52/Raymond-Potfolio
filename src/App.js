@@ -8,7 +8,8 @@ import Portfolio from './components/portfolio/Portfolio'
 import Testimonial from './components/testimonial/Testimonial'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
-
+import Form from './components/Form';
+import './App.css'; // Import the CSS file
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Portfolio/>
       <Testimonial/>
       <Contact/>
+      <Form />
       <Footer/>
     </>
   );

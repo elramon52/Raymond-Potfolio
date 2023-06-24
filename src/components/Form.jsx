@@ -20,7 +20,7 @@ const Form = () => {
     setErrorMessage('');
 
     try {
-      const response = await axios.post('/api/users', {
+      const response = await axios.post('http://localhost:5000/users', {
         name,
         address,
         email,
@@ -38,7 +38,7 @@ const Form = () => {
     setErrorMessage('');
 
     try {
-      const response = await axios.get(`/api/users/${contactNumber}`);
+      const response = await axios.get(`http://localhost:5000/users/${contactNumber}`);
       if (response.data) {
         setName(response.data.name);
         setAddress(response.data.address);
@@ -57,7 +57,7 @@ const Form = () => {
     setErrorMessage('');
 
     try {
-      const response = await axios.put(`/api/users/${contactNumber}`, {
+      const response = await axios.put(`http://localhost:5000/users/${contactNumber}`, {
         name,
         address,
         email,
@@ -74,7 +74,7 @@ const Form = () => {
     setErrorMessage('');
 
     try {
-      const response = await axios.delete(`/api/users/${contactNumber}`);
+      const response = await axios.delete(`http://localhost:5000/users/${contactNumber}`);
       setSuccessMessage(response.data.message);
       setName('');
       setAddress('');
